@@ -1,0 +1,1 @@
+firebase.databse().ref('categories').

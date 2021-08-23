@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBew1xL0am55nmYGyK6j_5PkjscK45IDnQ",
+          authDomain: "signup-restaurant.firebaseapp.com",
+          projectId: "signup-restaurant",
+          storageBucket: "signup-restaurant.appspot.com",
+          messagingSenderId: "731963776876",
+          appId: "1:731963776876:web:ac2799282a285afa1a5d49",
+          measurementId: "G-FEZ9KNNNYP"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+       
+      </script>
+    <div class="codehim-form" >
+        <div class="form-title">
+           <div class="user-icon gr-bg">
+              <i class="fa fa-user"></i>
+           </div>
+           <h2>uSER SIGN UP  </h2>
+        </div>
+        <label for="User"><i class="fa fa-envelope"></i> User Name:</label>
+        <input type="text" id="user" class="cm-input" placeholder="Enter Restaurant Name">
+        <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+        <input type="email" id="email" class="cm-input" placeholder="Enter your email adress">
+        <label for="pass"><i class="fa fa-lock"></i> Password:</label>
+        <input id="pass" type="password" class="cm-input" placeholder="Enter your password">
+        <label for="Country"><i class="fas fa-globe-americas"></i> Country</label>
+        <input type="text" id="country" class="cm-input" placeholder="Enter your email adress">
+        <label for="City"><i class="fas fa-university"></i> City</label>
+        <input id="city" type="text" class="cm-input" placeholder="Enter your password">    
+        <button type="submit" class="btn-login  gr-bg" onclick="SignUp()">Sign up</button>
+    </div>
+        
+        
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
